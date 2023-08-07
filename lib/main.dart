@@ -78,6 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                   onPressed: () {
                     textToConvert = txtCtrl.text;
+                    txtCtrl.clear();
                     setState(() {});
                     result = '';
                     for (int i = 0; i < textToConvert!.length; i++) {
